@@ -1,0 +1,24 @@
+{
+  "name": "racetrack-ipsum", 
+  "version": "0.0.1", 
+  "description": "a circuitous random copy generator", 
+  "author": "Steven Chen <contact@esses.us>",
+  "keywords": ["ipsum", "lorem ipsum", "random"], 
+  "files": [
+    "LICENSE.md", 
+    "racetrack.js"
+  ], 
+  "dependencies": {
+    "minimist": "1.2.0"
+  },
+  "homepage": "https://github.com/esses/racetrack-ipsum",
+  "repository": {
+    "type": "git", 
+    "url": "git://github.com/esses/racetrack-ipsum.git"
+  }, 
+  "main": "./lib/racetrack-ipsum.js",
+  "bin": {
+    "racetrack": "racetrack.js"
+  }, 
+  "license": "MIT"
+}

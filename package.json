@@ -3,13 +3,17 @@
   "version": "0.0.1", 
   "description": "a circuitous random copy generator", 
   "author": "Steven Chen <contact@esses.us>",
+  "license": "MIT",
   "keywords": ["ipsum", "lorem ipsum", "random"], 
   "files": [
     "LICENSE.md", 
     "racetrack.js"
   ], 
   "dependencies": {
-    "minimist": "1.2.0"
+    "minimist": "1.2.0",
+    "babel": "5.8.23",
+    "babel-jest": "5.3.0",
+    "jest-cli": "0.5.0"
   },
   "homepage": "https://github.com/esses/racetrack-ipsum",
   "repository": {
@@ -20,5 +24,14 @@
   "bin": {
     "racetrack": "racetrack.js"
   }, 
-  "license": "MIT"
+  "scripts": {
+   "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": ["js"],
+    "moduleFileExtensions": ["js", "json"],
+    "testDirectoryName": "test",
+    "collectCoverage": true
+  }
 }

@@ -2,6 +2,8 @@
 
 a circuitous random copy generator
 
+<!--[![Build Status](https://travis-ci.org/esses/racetrack-ipsum.svg?branch=master)](https://travis-ci.org/esses/racetrack-ipsum)-->
+
 #### option defaults
 ```
 --count 4          (# of units)
@@ -13,4 +15,5 @@ a circuitous random copy generator
 #### example usage
 
 to generate a racetrack ipsum with 5 paragraphs as HTML copied to clipboard:
+
 `node racetrack --count 5 --unit sentences --copy true --html true`
